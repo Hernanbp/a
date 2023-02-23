@@ -1,9 +1,13 @@
+"use client";
+
 import Header from "~/components/Header";
 import "../styles/globals.css";
-import { Archivo } from "@next/font/google";
+import localFont from "@next/font/local";
+import Lenis from "@studio-freight/lenis";
 
-const archivo = Archivo({
-  subsets: ["latin"],
+const hkgrotesk = localFont({
+  src: "../font/HKGrotesk-Regular.woff2",
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -11,9 +15,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  //smooth scroll
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    direction: "vertical",
+    gestureDirection: "vertical",
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    infinite: false,
+  });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   return (
-    <html lang="en">
-      <body className={archivo.className}>
+    <html className={hkgrotesk.className} lang="en">
+      <body className=" bg-[#EAE6D8]">
         <Header />
         {children}
       </body>

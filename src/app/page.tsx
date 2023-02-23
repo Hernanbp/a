@@ -1,3 +1,4 @@
+import About from "~/components/About";
 import Hero from "~/components/Hero";
 
 export const metadata = {
@@ -5,5 +6,10 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <About />
+    </>
+  );
 }
