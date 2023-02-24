@@ -8,18 +8,23 @@ interface item {
 }
 
 const Header = () => {
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLDivElement>(null);
 
   //opacity 0 to nav if scrolling down
   const handleScroll = () => {
-    const nav: any = navRef.current;
-    const scroll = window.scrollY;
+    const nav: HTMLDivElement | null = navRef.current;
+    const scroll: number = window.scrollY;
+
     if (scroll > 50) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      nav.classList.add("opacity-0");
+      if (nav) {
+        nav.classList.add("opacity-0");
+        nav.classList.add("translate-y-[-100%]");
+      }
     } else {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      nav.classList.remove("opacity-0");
+      if (nav) {
+        nav.classList.remove("opacity-0");
+        nav.classList.remove("translate-y-[-100%]");
+      }
     }
   };
 
@@ -38,7 +43,7 @@ const Header = () => {
     <header className="fixed right-0 top-0 left-0 z-40 text-[#282728]">
       <div className="mx-auto block w-[1580px] max-w-[90%]">
         <div className="flex items-center justify-between py-10">
-          <div className="font-semibold">Hernan B. Paz</div>
+          <h1 className="font-semibold ">Hernan B. Paz</h1>
           <nav
             ref={navRef}
             className="
