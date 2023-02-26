@@ -48,11 +48,11 @@ const Header = () => {
             ref={navRef}
             className="
             pointer-events-auto hidden items-center
-            justify-between text-sm font-medium transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex"
+            justify-between text-[.875rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex"
           >
             {menu.map((item: item) => (
               <div key={item.id} className="cursor-pointer px-[1.5rem]">
-                <span className="relative font-semibold after:invisible after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-0 after:bg-black after:transition-all after:duration-[.25s] after:ease-[cubic-bezier(.25,.46,.45,.94)] after:content-[''] hover:after:visible hover:after:w-full">
+                <span className="relative font-medium after:invisible after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-0 after:bg-black after:transition-all after:duration-[.25s] after:ease-[cubic-bezier(.25,.46,.45,.94)] after:content-[''] hover:after:visible hover:after:w-full">
                   {item.name}
                 </span>
               </div>

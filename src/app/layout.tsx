@@ -4,26 +4,32 @@ import Header from "~/components/Header";
 import "../styles/globals.css";
 import localFont from "@next/font/local";
 import Lenis from "@studio-freight/lenis";
+import MouseTrailer from "~/utils/MouseTrailer";
 
-const hkgrotesk = localFont({
+const graphik = localFont({
   src: [
     {
-      path: "../font/HKGrotesk-Regular.woff2",
+      path: "../font/graphik/GraphikLCG-Light.woff2",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../font/graphik/GraphikLCG-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../font/HKGrotesk-Medium.woff2",
+      path: "../font/graphik/GraphikLCG-Medium.woff2",
       weight: "500",
       style: "medium",
     },
     {
-      path: "../font/HKGrotesk-SemiBold.woff2",
+      path: "../font/graphik/GraphikLCG-Semibold.woff2",
       weight: "600",
       style: "semibold",
     },
     {
-      path: "../font/HKGrotesk-Bold.woff2",
+      path: "../font/graphik/GraphikLCG-Bold.woff2",
       weight: "700",
       style: "bold",
     },
@@ -75,9 +81,10 @@ export default function RootLayout({
   requestAnimationFrame(raf);
 
   return (
-    <html className={hkgrotesk.className} lang="en">
+    <html className={graphik.className} lang="en">
       <body className=" bg-[#EAE6D8]">
         <Header />
+        <MouseTrailer />
         {children}
       </body>
     </html>
