@@ -36,19 +36,18 @@ const Header = () => {
   const menu = [
     { id: 1, name: "Portfolio" },
     { id: 2, name: "Sobre mi" },
-    { id: 3, name: "Blog" },
   ];
 
   return (
     <header className="fixed right-0 top-0 left-0 z-40 text-[#282728]">
       <div className="mx-auto block w-[1580px] max-w-[90%]">
         <div className="flex items-center justify-between py-10">
-          <h1 className="font-semibold ">Hernan B. Paz</h1>
+          <h1 className="text-sm font-semibold uppercase">Hernan B. Paz</h1>
           <nav
             ref={navRef}
             className="
             pointer-events-auto hidden items-center
-            justify-between text-[.875rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex"
+            justify-between text-[.875rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex lg:text-[.78rem]"
           >
             {menu.map((item: item) => (
               <div key={item.id} className="cursor-pointer px-[1.5rem]">
@@ -57,11 +56,11 @@ const Header = () => {
                 </span>
               </div>
             ))}
-            <div className="ml-8 flex items-center gap-1">
-              <button className="rounded-full bg-[#282728] px-6 py-3 text-white">
+            <div className="ml-4 flex items-center gap-1">
+              <button className="rounded-full bg-[#282728] px-[1rem] py-3 font-medium text-white">
                 Contacto
               </button>
-              <button className="flex items-center gap-2 rounded-full border border-[#282728] px-6 py-3">
+              <button className="flex items-center gap-2 rounded-full border border-[#282728] px-[1rem] py-3 font-medium">
                 ESP
                 <ChevronDownIcon />
               </button>
