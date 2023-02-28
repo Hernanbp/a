@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="h-full bg-[#F8F8F8]">
+    <section className="h-full min-h-screen bg-[#F8F8F8]">
       <div className="mx-auto flex h-full w-[1580px] max-w-[90%] flex-col  items-center gap-20 py-20">
         {/* texto de arriba  */}
         <div className="flex h-1/2 w-full gap-20">

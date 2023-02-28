@@ -57,10 +57,10 @@ const Header = () => {
               </div>
             ))}
             <div className="ml-4 flex items-center gap-1">
-              <button className="rounded-full bg-[#282728] px-[1rem] py-3 font-medium text-white">
+              <button className="rounded-full bg-[#282728] px-[1rem] py-3 font-medium text-white xl:px-4">
                 Contacto
               </button>
-              <button className="flex items-center gap-2 rounded-full border border-[#282728] px-[1rem] py-3 font-medium">
+              <button className="flex items-center gap-2 rounded-full border border-[#282728] px-[1rem] py-3 font-medium xl:px-4">
                 ESP
                 <ChevronDownIcon />
               </button>
