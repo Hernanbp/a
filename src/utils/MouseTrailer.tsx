@@ -53,7 +53,7 @@ function MouseTrailer() {
       className={`pointer-events-none flex items-center justify-center bg-[#282728] `}
       ref={trailerRef}
     >
-      {interacting && <ArrowTopRightIcon className="scale-50 text-[#F8F8F8]" />}
+      {interacting && <ArrowTopRightIcon className="scale-75 text-[#F8F8F8]" />}
     </div>
   );
 }
