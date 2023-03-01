@@ -35,7 +35,7 @@ const Header = () => {
 
   const menu = [
     { id: 1, name: "Portfolio" },
-    { id: 2, name: "Sobre mi" },
+    { id: 2, name: "About" },
   ];
 
   return (
@@ -47,7 +47,7 @@ const Header = () => {
             ref={navRef}
             className="
             pointer-events-auto hidden items-center
-            justify-between text-[.875rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex lg:text-[.78rem]"
+            justify-between text-[.8rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex"
           >
             {menu.map((item: item) => (
               <div key={item.id} className="cursor-pointer px-[1.5rem]">
@@ -58,10 +58,10 @@ const Header = () => {
             ))}
             <div className="ml-4 flex items-center gap-1">
               <button className="rounded-full bg-[#222222] px-[1rem] py-3 font-medium text-white xl:px-4">
-                Contacto
+                Contact
               </button>
               <button className="flex items-center gap-2 rounded-full border border-[#222222] px-[1rem] py-3 font-medium xl:px-4">
-                ESP
+                ENG
                 <ChevronDownIcon />
               </button>
             </div>
