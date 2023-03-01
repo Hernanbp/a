@@ -11,10 +11,10 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Divider />
-      {/* <Portfolio /> */}
-      <div className="h-screen bg-[#f8f8f8]"></div>
+      <Portfolio />
+      <div className="h-[80vh] bg-[#f8f8f8]"></div>
       <About />
+      <Hero />
     </>
   );
 }
