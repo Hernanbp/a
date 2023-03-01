@@ -39,7 +39,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed right-0 top-0 left-0 z-40 text-[#282728]">
+    <header className="fixed right-0 top-0 left-0 z-40 text-[#222222]">
       <div className="mx-auto block w-[1580px] max-w-[90%]">
         <div className="flex items-center justify-between py-10">
           <h1 className="text-sm font-semibold uppercase">Hernan B. Paz</h1>
@@ -57,10 +57,10 @@ const Header = () => {
               </div>
             ))}
             <div className="ml-4 flex items-center gap-1">
-              <button className="rounded-full bg-[#282728] px-[1rem] py-3 font-medium text-white xl:px-4">
+              <button className="rounded-full bg-[#222222] px-[1rem] py-3 font-medium text-white xl:px-4">
                 Contacto
               </button>
-              <button className="flex items-center gap-2 rounded-full border border-[#282728] px-[1rem] py-3 font-medium xl:px-4">
+              <button className="flex items-center gap-2 rounded-full border border-[#222222] px-[1rem] py-3 font-medium xl:px-4">
                 ESP
                 <ChevronDownIcon />
               </button>

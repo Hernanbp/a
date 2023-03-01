@@ -1,9 +1,4 @@
-import {
-  ArrowBottomLeftIcon,
-  ArrowBottomRightIcon,
-  ArrowDownIcon,
-  ArrowTopRightIcon,
-} from "@radix-ui/react-icons";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import React, { useEffect, useRef } from "react";
 
 function MouseTrailer() {
@@ -19,7 +14,7 @@ function MouseTrailer() {
         const y = event.clientY + window.scrollY - trailer.offsetHeight / 2;
 
         const keyframes = {
-          transform: `translate(${x}px, ${y}px) scale(${interacting ? 5 : 1}) `,
+          transform: `translate(${x}px, ${y}px) scale(${interacting ? 6 : 1}) `,
         };
         trailer.animate(keyframes, {
           duration: 800,
@@ -45,15 +40,15 @@ function MouseTrailer() {
     <div
       style={{
         position: "absolute",
-        width: "20px",
-        height: "20px",
+        width: "15px",
+        height: "15px",
         borderRadius: "50%",
         zIndex: 9999,
       }}
-      className={`pointer-events-none flex items-center justify-center bg-[#282728] `}
+      className={`pointer-events-none flex items-center justify-center bg-[#282728]/80 backdrop-blur-sm `}
       ref={trailerRef}
     >
-      {interacting && <ArrowTopRightIcon className="scale-75 text-[#F8F8F8]" />}
+      {interacting && <ArrowTopRightIcon className="scale-50 text-[#F8F8F8]" />}
     </div>
   );
 }

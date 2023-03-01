@@ -39,10 +39,10 @@ const Portfolio = () => {
             {/* lado izquierdo */}
             <div className="flex w-1/2 items-start">
               <div className="flex items-center gap-4">
-                <div className="flex h-[2em] w-[2em] items-center justify-center rounded-full bg-[#282728] p-4 text-sm text-white">
+                <div className="flex h-[2em] w-[2em] items-center justify-center rounded-full bg-[#222222] p-4 text-sm text-white">
                   01
                 </div>
-                <button className="rounded-full border border-[#282728] px-4 py-1 text-sm">
+                <button className="rounded-full border border-[#222222] px-4 py-1 text-sm">
                   Learn More
                 </button>
               </div>
@@ -50,10 +50,10 @@ const Portfolio = () => {
             {/* lado derecho */}
             <div className="w-1/2 ">
               <div className="flex flex-col">
-                <h2 className="pb-8 text-[2.375rem] font-semibold tracking-tighter text-[#282728]">
+                <h2 className="pb-8 text-[2.375rem] font-semibold tracking-tighter text-[#222222]">
                   Digital Products & Services
                 </h2>
-                <p className="max-w-[600px] text-[1.375rem] font-normal leading-[1.3] tracking-tighter text-[#282728]">
+                <p className="max-w-[600px] text-[1.375rem] font-normal leading-[1.3] tracking-tighter text-[#222222]">
                   From idea to a product: creating successful digital services
                   for innovative startups and established businesses with
                   cutting-edge UX, UI design,front and back-end development.
@@ -106,10 +106,10 @@ const Portfolio = () => {
             {/* lado izquierdo */}
             <div className="flex w-1/2 items-start">
               <div className="flex items-center gap-4">
-                <div className="flex h-[2em] w-[2em] items-center justify-center rounded-full bg-[#282728] p-4 text-sm text-white">
+                <div className="flex h-[2em] w-[2em] items-center justify-center rounded-full bg-[#222222] p-4 text-sm text-white">
                   01
                 </div>
-                <button className="rounded-full border border-[#282728] px-4 py-1 text-sm">
+                <button className="rounded-full border border-[#222222] px-4 py-1 text-sm">
                   Learn More
                 </button>
               </div>
@@ -117,10 +117,10 @@ const Portfolio = () => {
             {/* lado derecho */}
             <div className="w-1/2 ">
               <div className="flex flex-col">
-                <h2 className="pb-8 text-[2.375rem] font-semibold tracking-tighter text-[#282728]">
+                <h2 className="pb-8 text-[2.375rem] font-semibold tracking-tighter text-[#222222]">
                   Digital Products & Services
                 </h2>
-                <p className="max-w-[600px] text-[1.375rem] font-normal leading-[1.3] tracking-tighter text-[#282728]">
+                <p className="max-w-[600px] text-[1.375rem] font-normal leading-[1.3] tracking-tighter text-[#222222]">
                   From idea to a product: creating successful digital services
                   for innovative startups and established businesses with
                   cutting-edge UX, UI design,front and back-end development.

@@ -20,13 +20,13 @@ const Divider = () => {
   });
 
   return (
-    <div className="bg-[#282728]">
-      <div className="mx-auto flex h-[60px] w-[1580px] max-w-[90%] items-center justify-center">
+    <div className="bg-[#222222]">
+      <div className="mx-auto flex h-[60px] w-[1580px] max-w-[90%] items-center justify-start">
         <p className="flex items-center  gap-4 text-sm font-medium uppercase text-white">
           <span className="flex h-[30px] w-[30px] items-center justify-center overflow-hidden rounded-full border border-white">
             <ArrowDownIcon className="scale-125 text-white" />
           </span>
-          scroll para ver mis trabajos
+          scroll down
         </p>
       </div>
     </div>
