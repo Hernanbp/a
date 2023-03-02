@@ -12,9 +12,7 @@ const About = () => {
   const main = useRef(null);
 
   useEffect(() => {
-    // move text to the right for as long as the scroll is happening
     gsap.to(textRef.current, {
-      // move x based on scroll
       x: 150,
       rotate: -1,
       ease: "none",
@@ -23,7 +21,7 @@ const About = () => {
         trigger: main.current,
         start: "top center",
         end: "bottom center",
-        scrub: 30,
+        scrub: 10,
       },
     });
 
@@ -36,7 +34,7 @@ const About = () => {
         trigger: main.current,
         start: "top center",
         end: "bottom center",
-        scrub: 30,
+        scrub: 10,
       },
     });
 
@@ -50,13 +48,13 @@ const About = () => {
         trigger: main.current,
         start: "top center",
         end: "bottom center",
-        scrub: 30,
+        scrub: 10,
       },
     });
   }, []);
 
   return (
-    <div className="relative h-screen min-h-screen overflow-hidden text-[#191919]">
+    <div className="relative h-[120vh] min-h-screen overflow-hidden  text-[#fff]">
       <div
         ref={main}
         className="mx-auto flex h-full w-[1580px] max-w-[90%] flex-col items-center justify-center"
@@ -65,37 +63,37 @@ const About = () => {
           ref={textRef}
           className="flex items-center gap-2 text-[8rem] font-medium tracking-tighter"
         >
-          <span className="block">Developing</span>
+          <span className="block">crafting</span>
         </h2>
         <h2
           ref={textRef2}
-          className="flex items-center gap-2 text-[8rem] font-medium tracking-tighter"
+          className="flex translate-x-[-10rem] items-center gap-2 text-[8rem] font-medium tracking-tighter"
         >
-          <span className="block">Digital</span>
+          <span className="block">digital</span>
         </h2>
         <h2
           ref={textRef3}
           className="flex items-center gap-2 text-[8rem] font-medium tracking-tighter"
         >
-          <span className="block translate-x-[-10rem]">Experiences</span>
+          <span className="block translate-x-[-14rem]">experiences</span>
         </h2>
-        <div className="absolute  -z-10 flex h-[50vh] w-[1200px] max-w-[90%] border border-[#191919]">
-          <div className="flex h-full w-[200px] flex-col justify-center border-r border-[#191919]">
-            <div className="h-[112.1px] w-full rounded-full border border-[#3d3d3d]"></div>
-            <div className="h-[200px] w-full rounded-full border border-[#3d3d3d]"></div>
+        <div className="absolute  -z-10 flex h-[50vh] w-[1200px] max-w-[90%] border border-[#5c5c5c]">
+          <div className="flex h-full w-[200px] flex-col justify-center border-r border-[#5c5c5c]">
+            <div className="h-[112.1px] w-full rounded-full border border-[#5c5c5c]"></div>
+            <div className="h-[200px] w-full rounded-full border border-[#5c5c5c]"></div>
           </div>
-          <div className="h-full w-[200px] border-r border-[#191919]"></div>
-          <div className="h-full w-[200px] border-r border-[#191919]">
-            <div className="h-full w-full rounded-full border border-[#3d3d3d]"></div>
+          <div className="h-full w-[200px] border-r border-[#5c5c5c]"></div>
+          <div className="h-full w-[200px] border-r border-[#5c5c5c]">
+            <div className="h-full w-full rounded-full border border-[#5c5c5c]"></div>
           </div>
-          <div className="h-full w-[200px] border-r border-[#191919]"></div>
-          <div className="flex h-full w-[200px] flex-col justify-end border-r border-[#191919] p-4">
-            <p className="text-sm tracking-tighter">
-              Quality is the common thread in everything we do. It’s not
-              something we say, it’s something we’ve been recognized for. And we
-              proudly hold these awards as a reminder of how the way you do
-              things matters.
+          <div className="h-full w-[200px] border-r border-[#5c5c5c]"></div>
+          <div className="flex h-full w-[200px] flex-col justify-end border-r border-[#5c5c5c] p-4">
+            <p className="text-sm font-light tracking-tight">
+              Quality is the common thread in everything I do.
             </p>
+          </div>
+          <div className="h-full w-[200px]">
+            <div className="h-[200px] w-full rounded-full border border-[#5c5c5c]"></div>
           </div>
         </div>
       </div>

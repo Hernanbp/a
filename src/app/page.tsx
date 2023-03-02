@@ -12,9 +12,8 @@ export default function Page() {
     <>
       <Hero />
       <Divider />
-      <About />
       <Portfolio />
-      <div className="h-screen bg-[#f8f8f8]"></div>
+      <About />
     </>
   );
 }

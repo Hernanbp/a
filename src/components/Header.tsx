@@ -39,10 +39,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed right-0 top-0 left-0 z-40 text-[#222222]">
+    <header className="fixed right-0 top-0 left-0 z-40 text-[#fff]">
       <div className="mx-auto block w-[1580px] max-w-[90%]">
         <div className="flex items-center justify-between py-10">
-          <h1 className="text-sm font-semibold uppercase">Hernan B. Paz</h1>
+          <h1 className="text-3xl font-semibold ">hbp</h1>
           <nav
             ref={navRef}
             className="
@@ -51,16 +51,16 @@ const Header = () => {
           >
             {menu.map((item: item) => (
               <div key={item.id} className="cursor-pointer px-[1.5rem]">
-                <span className="relative font-medium after:invisible after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-0 after:bg-black after:transition-all after:duration-[.25s] after:ease-[cubic-bezier(.25,.46,.45,.94)] after:content-[''] hover:after:visible hover:after:w-full">
+                <span className="relative font-medium after:invisible after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-0 after:bg-white after:transition-all after:duration-[.25s] after:ease-[cubic-bezier(.25,.46,.45,.94)] after:content-[''] hover:after:visible hover:after:w-full">
                   {item.name}
                 </span>
               </div>
             ))}
             <div className="ml-4 flex items-center gap-1">
-              <button className="rounded-full bg-[#222222] px-[1rem] py-3 font-medium text-white xl:px-4">
+              <button className="rounded-full bg-[#fff] px-[1rem] py-3 font-medium text-[#282728] xl:px-4">
                 Contact
               </button>
-              <button className="flex items-center gap-2 rounded-full border border-[#222222] px-[1rem] py-3 font-medium xl:px-4">
+              <button className="flex items-center gap-2 rounded-full border border-[#fff] px-[1rem] py-3 font-medium xl:px-4">
                 ENG
                 <ChevronDownIcon />
               </button>

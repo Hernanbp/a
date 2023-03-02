@@ -82,7 +82,7 @@ export default function RootLayout({
 
   return (
     <html className={graphik.className} lang="en">
-      <body className="overflow-hidden">
+      <body className="overflow-hidden bg-[#282728]">
         <Header />
         <MouseTrailer />
         {children}
