@@ -7,14 +7,16 @@ const Hero = () => {
             <span>look at — usual things</span>
             <span>with unusual eyes.</span>
           </h1>
-          <p className="text-[1.15rem] leading-tight text-[#fff]">
-            <span className="block font-medium leading-tight tracking-tight">
-              Hernan Barrios Paz
-            </span>
-            <span className="font-extralight tracking-tight">
-              Frontend Developer & UI Designer
-            </span>
-          </p>
+          <div className="flex flex-col">
+            <p className="text-[1.15rem] leading-tight text-[#fff]">
+              <span className="block font-medium leading-tight tracking-tight">
+                Hernan Barrios Paz
+              </span>
+              <span className="font-extralight tracking-tight">
+                Fullstack Developer & UI Designer
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </section>

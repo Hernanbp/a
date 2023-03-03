@@ -45,7 +45,7 @@ function MouseTrailer() {
         borderRadius: "50%",
         zIndex: 9999,
       }}
-      className={`pointer-events-none flex items-center justify-center bg-[#f8f8f8]`}
+      className={`pointer-events-none flex items-center justify-center bg-[#f8f8f8] mix-blend-exclusion`}
       ref={trailerRef}
     >
       {interacting && <ArrowTopRightIcon className="scale-50 text-[#282728]" />}
