@@ -12,7 +12,6 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Divider />
       {/* <Portfolio /> */}
       <About />
       <Projects />
