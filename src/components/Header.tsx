@@ -1,12 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import {
-  ChevronDownIcon,
   DividerVerticalIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import { useEffect, useRef } from "react";
-import Divider from "~/utils/Divider";
 
 interface item {
   id: number;
@@ -56,7 +54,7 @@ const Header = () => {
             justify-between text-[.8rem] transition-all duration-700 ease-[cubic-bezier(.25,.46,.45,.94)] md:flex"
           >
             {menu.map((item: item) => (
-              <div key={item.id} className="cursor-pointer px-3 text-xs">
+              <div key={item.id} className="cursor-pointer px-2 text-sm">
                 <span className="font-base relative after:invisible after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-0 after:bg-white after:transition-all after:duration-[.25s] after:ease-[cubic-bezier(.25,.46,.45,.94)] after:content-[''] hover:after:visible hover:after:w-full">
                   {item.name}
                 </span>

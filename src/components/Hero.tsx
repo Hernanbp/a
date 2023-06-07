@@ -44,7 +44,9 @@ const Hero = () => {
           <div className="flex flex-col justify-center">
             <h1 className="mb-[4rem] flex flex-col overflow-hidden font-semibold leading-[80%] tracking-tight text-[#fff] lg:text-[5rem] xl:text-[5.5rem]">
               <span ref={text2}>look at — usual things</span>
-              <span ref={text}>with unusual eyes.</span>
+              <span className="text-[#F1584F]" ref={text}>
+                with unusual eyes.
+              </span>
             </h1>
             <div className="flex flex-col">
               <p className="text-[1.15rem] leading-tight text-[#fff]">
@@ -52,7 +54,7 @@ const Hero = () => {
                   Hernan Barrios Paz
                 </span>
                 <span className="font-extralight tracking-tight text-[#ccc]">
-                  Fullstack Developer & UI Designer
+                  Fullstack Developer & Web Designer
                 </span>
               </p>
             </div>

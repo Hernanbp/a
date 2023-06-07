@@ -1,35 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-"use client";
-
-import { useRef } from "react";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useIsomorphicLayoutEffect } from "../utils/isomorphicEffect";
-
-gsap.registerPlugin(ScrollTrigger);
-
 import Image from "next/image";
 
 const Portfolio = () => {
-  // const main = useRef(null);
-
-  // useIsomorphicLayoutEffect(() => {
-  //   const ctx = gsap.context((self) => {
-  //     const boxes: HTMLElement[] = self.selector(".section");
-
-  //     boxes.forEach((section) => {
-  //       ScrollTrigger.create({
-  //         trigger: section,
-  //         start: "+=400px top",
-  //         pin: true,
-  //         pinSpacing: false,
-  //         scrub: 4,
-  //       });
-  //     });
-  //   }, main);
-  //   return () => ctx.kill();
-  // }, []);
-
   return (
     <div className="min-h-screen">
       <section className="section h-full min-h-screen bg-[#F8F8F8]">
@@ -65,15 +36,15 @@ const Portfolio = () => {
           {/* imagenes  */}
           <div className="flex h-full w-full gap-20">
             <div className="flex w-1/2 flex-col">
-              <div className="relative h-full min-h-[350px] cursor-pointer overflow-hidden transition-all duration-500 hover:rounded-xl ">
-                <Image
+              <div className="interactable relative h-full min-h-[350px] cursor-pointer overflow-hidden bg-[#070707] transition-all duration-500 hover:rounded-xl ">
+                {/* <Image
                   datatype="image"
                   alt="test"
                   src="/img1.png"
                   fill={true}
                   style={{ objectFit: "cover" }}
                   className="interactable opacity-[.9] transition-all duration-300 ease-[cubic-bezier(.25,.46,.45,.94)] hover:scale-105 hover:opacity-100"
-                />
+                /> */}
               </div>
               <div className="mt-2">
                 <p className="tracking-tight">Follow Art</p>
@@ -81,15 +52,15 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="flex w-1/2 flex-col">
-              <div className="relative h-full min-h-[350px] cursor-pointer overflow-hidden transition-all duration-500 hover:rounded-xl ">
-                <Image
+              <div className="interactable relative  h-full min-h-[350px] cursor-pointer overflow-hidden bg-[#070707] transition-all duration-500 hover:rounded-xl ">
+                {/* <Image
                   datatype="image"
                   alt="test"
                   src="/1.jpg"
                   fill={true}
                   style={{ objectFit: "cover" }}
                   className="interactable opacity-[.9] transition-all duration-300 ease-[cubic-bezier(.25,.46,.45,.94)] hover:scale-105 hover:opacity-100"
-                />
+                /> */}
               </div>
               <div className="mt-2">
                 <p className="tracking-tight">Follow Art</p>
