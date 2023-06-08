@@ -1,10 +1,10 @@
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function MouseTrailer() {
   const trailerRef = useRef<HTMLDivElement>(null);
 
-  const [interacting, setInteracting] = React.useState(false);
+  const [interacting, setInteracting] = useState(false);
 
   useEffect(() => {
     function animateTrailer(event: MouseEvent, interacting: boolean) {

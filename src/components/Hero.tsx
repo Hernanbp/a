@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="h-[85vh]  min-h-[550px]">
+      <section className="h-[85vh] min-h-[550px] bg-[#0e0e0e]">
         <div className="mx-auto flex h-full w-[1580px] max-w-[90%]">
           <div className="flex flex-col justify-center">
             <h1 className="mb-[4rem] flex flex-col overflow-hidden font-semibold leading-[80%] tracking-tight text-[#fff] lg:text-[5rem] xl:text-[5.5rem]">
@@ -54,7 +54,7 @@ const Hero = () => {
                   Hernan Barrios Paz
                 </span>
                 <span className="font-extralight tracking-tight text-[#ccc]">
-                  Fullstack Developer & Web Designer
+                  Web Developer & Designer
                 </span>
               </p>
             </div>
