@@ -50,10 +50,10 @@ const Hero = () => {
             </h1>
             <div className="flex flex-col">
               <p className="text-[1.15rem] leading-tight text-[#fff]">
-                <span className="block font-medium leading-tight tracking-tight">
+                <span className="block font-medium  leading-tight tracking-tight lg:text-xl">
                   Hernan Barrios Paz
                 </span>
-                <span className="font-extralight tracking-tight text-[#ccc]">
+                <span className="font-extralight tracking-tight text-[#ccc] lg:text-xl">
                   Web Developer & Designer
                 </span>
               </p>
